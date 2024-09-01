@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="404.css">
+    <style>
+
+ </style>
+</head>
+<body>
+    <div class="container">
+ <div class="canvasContainer">
+    <canvas id="myCanvas"></canvas>
+    </canvas>
+    </div>
+
+<div class="textContainer">
+    <h1>404</h1>
+    <div class="heading">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <h1> Site is still under construction</h1>
+    <i class="fa-solid fa-screwdriver-wrench"></i>
+    </div>
+
+    <div class="crown">
+        <i class="fa-solid fa-crown"></i>
+    </div>
+    <div class="relax">
+       <i class="fa-brands fa-css3"></i>
+       <i class="fa-solid fa-code-commit"></i>
+       <i class="fa-solid fa-gears"></i>
+       <p> Emma is still cooking <span>...</span></p>
+       <i class="fa-solid fa-person-digging"></i>
+       <i class="fa-solid fa-code-commit"></i>
+       <i class="fa-brands fa-node-js"></i>
+       
+    </div>
+</div>
+    </div>
+   
+
+<!-- <script src="404.js"></script> -->
+ <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize the canvas to fill the window
+        function resizeCanvas() {
+            canvas.width =  window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+        }
+
+        // Call resizeCanvas to set initial size
+        resizeCanvas();
+        
+        // Adjust canvas size when the window is resized
+        window.addEventListener('resize', resizeCanvas);
+
+        // Handle mouse movement
+           function handleMouseMove(event) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Clear the canvas
+            // ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Set fill color based on mouse position
+            ctx.fillStyle = `rgb(${x % 256}, ${y % 256}, ${(x + y) % 256})`;
+            ctx.beginPath();
+            ctx.arc(x, y, 10, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        // Add event listener for mouse movement
+        canvas.addEventListener('mousemove', handleMouseMove);
+
+ </script>
+
+<script src="https://kit.fontawesome.com/da50b02048.js" crossorigin="anonymous"></script>
+</body>
+</html>

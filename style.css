@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||body styles */
+body{
+/* font-family:come back to this */
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+height:100vh;
+width: 100%;
+    background: linear-gradient(60deg,rgba(153, 153, 255, 0.384),rgba(48, 48, 255, 0.493));
+
+}
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||Global button styles */
+button{
+      background-color: rgb(110 149 238);
+      padding:15px;
+      border-radius: 12px;
+      border:none;
+      color:white;
+      /* position: absolute; */
+      bottom: 0;
+      margin-top: 10px;
+      cursor: pointer;
+      
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||log in button styles */
+.logInButton{
+    position: absolute;
+
+   
+    
+}
+.logInBtn{
+    padding: 25px;
+    box-shadow: 0px 10px 20px  rgb(153, 153, 255);
+}
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||close button styles */
+.closeButton{
+    position: absolute;
+    
+    font-size: 25px;
+    top:10%;
+    left:80%;
+    visibility: hidden;
+}
+.close{
+    background: linear-gradient(60deg,rgb(247, 169, 169),rgb(255, 0, 0));
+    box-shadow: 0px 05px 20px rgba(0, 0, 0, 0.425);
+    font-size: 18px;
+    
+}
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||conatiner styles */
+.container{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    /* border:1px solid rgb(68, 68, 68); */
+    box-shadow: 0px 10px 20px rgb(153, 153, 255);
+    border-radius: 15px;
+    height: 60vh;
+    visibility: hidden;
+    background: white;
+    
+
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||signUp styles */
+.signUp{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 15px;
+    margin: 10px;
+   
+    
+}
+.signUp form{
+    display: flex;
+    flex-direction: column;   
+    padding: 15px;
+    margin: -10px;
+
+}
+.signUp form input{
+    margin-top: 8px;
+    height:35px;
+    padding: 15px;
+    
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||signIn styles */
+.signIn{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+    z-index:10;
+    
+    
+}
+.signIn form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 5px;
+
+
+}
+.signIn form input{
+    margin-top: 8px;
+    height:35px;
+    padding: 15px;
+}
+.signIn .forgotPassword{
+    padding:15px;
+    margin-top: -15px;
+    color:grey;
+    cursor:pointer;
+}
+.signIn .forgotPassword:hover{
+    color:black;
+    transition:.5s
+}
+.viewProjects{
+    color: grey;
+    cursor:pointer;
+}
+.viewProjects:hover{
+    color:black;
+    transition:.5s;
+}
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||switchContainer styles */
+.switchContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    height: 60vh;    
+    width: 715px;
+    visibility: hidden;;
+    
+    
+}
+            /* |||||signInswitchCont|||||||||| */
+.signInSwitchContainer{
+    background: linear-gradient(60deg,rgb(153, 153, 255),rgb(48, 48, 255));
+    width:50%;
+    height: auto;
+    /* margin-left: 10px; */
+    padding:10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border-radius: 25% 10px 10px 25%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+.signUpInIn{
+    background: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    
+}
+.signInNotice{
+     padding: 15px;
+     font-size: 20px;
+}
+          /* |||||||signUpSwitchCont|||||||||||||| */
+.signUpSwitchContainer{
+    background: linear-gradient(60deg,rgb(153, 153, 255),rgb(48, 48, 255));
+    width:50%;
+    height: auto;
+    padding:10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border-radius: 10px 25% 25% 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    visibility: hidden;
+}
+.signInInUp{
+    /* margin: 0px; */
+    background: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    cursor: pointer;
+}
+.signUpNotice{
+    padding:15px;
+    font-size: 20px;
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||signinbtn */
+.signInButton{
+    /* margin-top: -0.1px; */
+    cursor: pointer;
+    padding:17px;
+}
+/* |||||||||||||||||||||||||||||||||||||||||signUpbtn */
+.signUpButton{
+    margin-top: 30px;
+    cursor: pointer;
+    padding:14.8px;
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Global icon */
+.icons{
+    margin-top: 10px;
+    padding:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+i{
+    border: 0.2px solid gray;
+    padding:15px;
+    border-radius: 8px;
+    margin:5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+i:hover{
+    background-color: rgb(110, 110, 238);
+    color:white;
+    border:none;
+    transition: .5s;
+}

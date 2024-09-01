@@ -1,0 +1,34 @@
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize the canvas to fill the window
+        function resizeCanvas() {
+            canvas.width =  window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+        }
+
+        // Call resizeCanvas to set initial size
+        resizeCanvas();
+        
+        // Adjust canvas size when the window is resized
+        window.addEventListener('resize', resizeCanvas);
+
+        // Handle mouse movement
+           function handleMouseMove(event) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Clear the canvas
+            // ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Set fill color based on mouse position
+            ctx.fillStyle = `rgb(${x % 256}, ${y % 256}, ${(x + y) % 256})`;
+            ctx.beginPath();
+            ctx.arc(x, y, 10, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        // Add event listener for mouse movement
+        canvas.addEventListener('mousemove', handleMouseMove);
