@@ -1,5 +1,5 @@
 ## Hi there 👋
-I am Emmanuel Mwesigwa this is my Portfolio and Projects website it willl under go changes and will keep on being modified as we go on right now am just a kid on 17 but as we go i will notify.
+I am Emmanuel Mwesigwa this is my Portfolio and Projects website it willl under go changes and will keep on being modified as we go on right now am just a kid age 17 but as we go i will notify.
 
 Currentdate(dd,mm,yy)=>reason
 
