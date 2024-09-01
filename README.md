@@ -1,5 +1,13 @@
 ## Hi there 👋
+I am Emmanuel Mwesigwa this is my Portfolio and Projects website it willl under go changes and will keep on being modified as we go on right now am just a kid on 17 but as we go i will notify.
 
+Currentdate(dd,mm,yy)=>reason
+
+Currentdate(31/8/24)=> Update: login form update not perfect but i have sch soo it will pass
+
+curentdate(31/8/24)=> update: Its me again fixing the button alignment heheehe adding a background on the login
+
+currentdate(1/9/24)=> update: hello i have fixed the issues on the the page, now the view is okay. phone veiw coming up soon.. tried github desktop but it refused to login so we will just have to do things manually for some time till this issue is fixed
 <!--
 **Prince6yt/Prince6yt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
