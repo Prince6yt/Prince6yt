@@ -5,7 +5,9 @@ Currentdate(dd,mm,yy)=>reason
 
 Currentdate(31/8/24)=> Update: login form update not perfect but i have sch soo it will pass
 
-curentdate(31/8/24)=> update: Its me again fixing the button alignment heheehe adding a background on the login
+Curentdate(31/8/24)=> Update: Its me again fixing the button alignment heheehe adding a background on the login
+
+Current(6/8/24)=> Update: Removed unnecessary tags 😁
 
 currentdate(1/9/24)=> update: hello i have fixed the issues on the the page, now the view is okay. phone veiw coming up soon.. tried github desktop but it refused to login so we will just have to do things manually for some time till this issue is fixed
 <!--
